@@ -10,10 +10,10 @@
     @apply text-xl font-semibold text-black;
   }
   .subtitle {
-    @apply font-bold text-gray-700;
+    @apply font-bold text-slate-700	
   }
   .text {
-    @apply font-normal text-gray-900;
+    @apply font-normal text-slate-900;
   }
   .link {
     @apply text-sm font-medium italic text-violet-900 hover:text-violet-700 hover:cursor-pointer;
