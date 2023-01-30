@@ -1,13 +1,44 @@
 //TODO:     Fetching API using fetch() method and async/await
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const FetchDataAsync = () => {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const res = await fetch(`https://jsonplaceholder.typicode.com/users`);
+        if (!res.ok) {
+          throw new Error(
+            `This is an HTTP error: The status is ${response.status}`
+          );
+        }
+        let receiveData = await res.json();
+        setUsers(receiveData);
+        setError(null);
+      } catch (err) {
+        setError(err.message);
+        setData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+    getData();
+  }, []);
+
   return (
-    <div>
+    <div className="basis-1/3">
       <h2 className="subtitle">
-        II. Fetching API using fetch() method and async/await
+        Fetching API using fetch() method and async/await syntax
       </h2>
+      {users.map((user) => (
+        <li key={user.id} className="text-sm list-none m-1">
+          {user.email}
+        </li>
+      ))}
     </div>
   );
 };
