@@ -9,17 +9,19 @@ import {
 
 function App() {
   return (
-    <div className="h-screen bg-slate-50 flex-cen">
+    <div className="min-h-screen flex-cen">
       <h1 className="title m-2">Vite React Tailwind</h1>
 
       <div className="flex-cen container mb-4">
         <FetchData />
-        <FetchDataAsync />
       </div>
-      <div className="flex-cen container mb-4">
+      {/*
+        <FetchDataAsync />
         <FetchHook />
         <FetchAxios />
         <FetchSwr />
+      */}
+      <div className="flex-cen container mb-4">
       </div>
     </div>
   );
