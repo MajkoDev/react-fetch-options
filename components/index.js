@@ -1,5 +1,6 @@
 //*     IMPORTS
 
+import Fetch from "./Fetch";
 import FetchData from "./FetchData";
 import FetchDataAsync from "./FetchDataAsync";
 
@@ -9,4 +10,4 @@ import FetchSwr from "./FetchSwr";
 
 //*     EXPORTS
 
-export { FetchData, FetchDataAsync, FetchHook, FetchAxios, FetchSwr };
+export { Fetch, FetchData, FetchDataAsync, FetchHook, FetchAxios, FetchSwr };
