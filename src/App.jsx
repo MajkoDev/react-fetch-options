@@ -1,6 +1,7 @@
 // Components
 import { useState } from "react";
 import {
+  Fetch,
   FetchData,
   FetchDataAsync,
   FetchHook,
@@ -40,19 +41,21 @@ function App() {
         </button>
       </div>
 
+
       {option && (
-        <>
+        <div className="flex flex-col md:flex-row gap-4">
+          <Fetch />
           <FetchData />
           <FetchDataAsync />
-        </>
+        </div>
       )}
 
       {library && (
-        <>
+        <div className="flex flex-col md:flex-row gap-4">
           <FetchHook />
           <FetchAxios />
           <FetchSwr />
-        </>
+        </div>
       )}
 
     </div>

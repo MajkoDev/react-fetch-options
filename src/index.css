@@ -10,7 +10,7 @@
     @apply text-xl font-semibold text-black;
   }
   .subtitle {
-    @apply font-bold text-slate-700	
+    @apply font-bold text-slate-700 md:h-16 h-8 
   }
   .text {
     @apply font-normal text-slate-900;
