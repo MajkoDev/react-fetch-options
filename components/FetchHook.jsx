@@ -15,9 +15,9 @@ const FetchHook = () => {
       {error && <h3>There is a problem somewhere!</h3>}
       {data &&
         data.map(({ id, name }) => (
-          <p className="text-sm italic" key={id}>
-            <h3>{name}</h3>
-          </p>
+          <li className="text-sm italic list-none m-1" key={id}>
+            <p>{name}</p>
+          </li>
         ))}
     </div>
   );
