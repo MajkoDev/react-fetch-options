@@ -6,8 +6,17 @@ import FetchDataAsync from "./FetchDataAsync";
 
 import FetchHook from "./FetchHook";
 import FetchAxios from "./FetchAxios";
+import FetchAxiosAsync from "./FetchAxiosAsync";
 import FetchSwr from "./FetchSwr";
 
 //*     EXPORTS
 
-export { Fetch, FetchData, FetchDataAsync, FetchHook, FetchAxios, FetchSwr };
+export {
+  Fetch,
+  FetchData,
+  FetchDataAsync,
+  FetchHook,
+  FetchAxios,
+  FetchAxiosAsync,
+  FetchSwr,
+};
