@@ -6,6 +6,7 @@ import {
   FetchDataAsync,
   FetchHook,
   FetchAxios,
+  FetchAxiosAsync,
   FetchSwr,
 } from "../components";
 
@@ -41,7 +42,6 @@ function App() {
         </button>
       </div>
 
-
       {option && (
         <div className="flex flex-col md:flex-row gap-4">
           <Fetch />
@@ -53,11 +53,10 @@ function App() {
       {library && (
         <div className="flex flex-col md:flex-row gap-4">
           <FetchHook />
-          <FetchAxios />
+          <FetchAxiosAsync />
           <FetchSwr />
         </div>
       )}
-
     </div>
   );
 }
