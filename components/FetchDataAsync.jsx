@@ -3,9 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 const FetchDataAsync = () => {
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [users, setUsers] = useState([])
 
   useEffect(() => {
     const getData = async () => {
